@@ -1,0 +1,17 @@
+08:00 am --> Wake Up.
+
+09:00 am --> Study (Engineering).
+
+12:00 pm --> Lunch.
+
+02:30 pm --> Study (Coding).
+
+05:30 pm --> Snacks.
+
+06:30 pm --> Study (Engineering).
+
+09:30 pm --> Dinner.
+
+10:30 pm --> Study (Coding).
+
+02:00 am --> In the Blanket.
