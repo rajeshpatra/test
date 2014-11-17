@@ -5,18 +5,19 @@
 </head>
 <body>
 	<?php
+	require "newdb.php";
 	if(isset($_POST['submit']))
 		// 
 		// after POST what should I write? the id="add" or name="submit" as in form.
 		// 
 		{
-			require "newdb.php";
+			
 			$query = "INSERT INTO data " .
 			"(name, email, mobno, password) " .
 			"VALUES " .
-			"('$name', '$email', '$mobno', '$pass')";
+			"('{$name}', '{$email}', '{$mobno}', '{$pass}')";
 			$insert = mysql_query($query, $connect);
-			if ($insert)
+			if (!$insert)
 			{
 				die('Could not inserted to database.: ' . mysql_error());
 			}
@@ -30,7 +31,7 @@
 		?>
 			<h3>About You.</h3>
 			<br>
-			<form method="post" action="<?php $_PHP_SELF?>">
+			<form method="post" action="form.php">
 			<!-- what's action=""? I just copied from web. -->
 				<table>
 					<tr>
