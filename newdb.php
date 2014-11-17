@@ -12,6 +12,7 @@
 		die('Could not select database: ' . mysql_error());
 	}
 	else {
-		echo "Successfully selected database.";
+		echo "Successfully selected database. \n";
 	}
 ?>
+<br>

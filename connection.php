@@ -5,6 +5,7 @@
 		die ("Could not connect: " . mysql_error());
 	}
 	else {
-		echo "Successfully connected to Databse.";
+		echo "Successfully connected to Databse.\n";
 	}
 ?>
+<br>
