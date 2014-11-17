@@ -15,7 +15,7 @@
 			$query = "INSERT INTO data " .
 			"(name, email, mobno, password) " .
 			"VALUES " .
-			"('{$name}', '{$email}', '{$mobno}', '{$pass}')";
+			"('{$_POST['name']}', '{$_POST['email']}', '{$_POST['mobno']}', '{$_POST['pass']}')";
 			$insert = mysql_query($query, $connect);
 			if (!$insert)
 			{
