@@ -11,5 +11,7 @@
 	if (!$query1) {
 		die('Could not select database: ' . mysql_error());
 	}
-	echo "Successfully selected database.";
+	else {
+		echo "Successfully selected database.";
+	}
 ?>
