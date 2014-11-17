@@ -11,11 +11,14 @@
 		// after POST what should I write? the id="add" or name="submit" as in form.
 		// 
 		{
-			
+			$name = $_POST['name'];
+			$email = $_POST['email'];
+			$mobno = $_POST['mobno'];
+			$pass = $_POST['pass'];
 			$query = "INSERT INTO data " .
 			"(name, email, mobno, password) " .
 			"VALUES " .
-			"('{$name}', '{$email}', '{$mobno}', '{$pass}')";
+			"('{$name}', '{$email}', '{$mobno}', '{$pass}');";
 			$insert = mysql_query($query, $connect);
 			if (!$insert)
 			{
